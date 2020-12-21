@@ -1,0 +1,22 @@
+From your browser, open the page where the button sits. Right click on the page and select "Inspect".
+Then, from the DOM code, right click on the button, and select "Copy > Copy JS path".
+That selector can be easily used in puppeteer.
+
+// JS Path
+document.querySelector("#main > div:nth-child(5) > form > div > div:nth-child(7) > div:nth-child(2) > input")
+
+// Selector
+#main > div:nth-child(5) > form > div > div:nth-child(7) > div:nth-child(2) > input
+
+// Full X path
+/html/body/div[1]/div/div[1]/form/div/div[7]/div[2]/input
+
+
+Puppeteer examples
+https://www.tgwilkins.co.uk/using-puppeteer-to-transform-html-content-into-json.html
+
+
+TODO
+Create a process to write to a logfile to keep track of all the data
+- Easy to figure out what failed, or why data was incorrectly scrapped from a page
+
